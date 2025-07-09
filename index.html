@@ -1,153 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+  <title>Chandan Mahato | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-    <nav>
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <h2>Chandan <span>Kumar </span> Mahato</h2>
-            </a>
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#Blog">Blog</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Chandan<span>Mahato</span></a>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <div class="header-container container">
-            <div class="header-left">
-                <h1>
-                    Hello,
-                    <p class="name">Hi, I'm <span>Chandan</span></p>
-                </h1>
-                <p>Skilled in HTML, CSS, and JavaScript, with experience in Windows environments.Dedicated to producing high-quality work and helping organizations grow. Also knowledgeable in machine learning, able to analyze data and gain insights.</p>
-                <h5>Frontend Developer</h5>
-                <br>
-                <div class="header-action-aria">
-                    <a href="ckm1.pdf" download class="btn btn-primary">Download CV</a>
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-            <div class="header-right">
-                <img src="Chandan.jpg" alt="Chandan">
-            </div>
-        </div>
-    </header>
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Hello, I’m <span>Chandan</span></h1>
+      <p>Frontend Developer &amp; ML Enthusiast crafting responsive, data-driven experiences.</p>
+      <div class="hero-cta">
+        <a href="ckm1.pdf" download class="btn btn-primary">Download CV</a>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="Chandan.jpg" loading="lazy" alt="Chandan Kumar Mahato" />
+    </div>
+  </section>
 
-    <section id="About">
-        <h1><span>A</span>BOUT</h1>
-        <div class="container about-container">
-           <p>I'm a diligent <span>Frontend Developer</span>, passionately committed to refining my <span>CSS, HTML</span>, skills. My relentless dedication drives me to continually learn and adapt, staying at the forefront of <span>web development</span> trends. Additionally, I have a growing interest in <span>machine learning</span>, which I leverage to enhance user experiences and make data-driven decisions. My goal is to create captivating, responsive, and user-friendly web interfaces.</p>
-
+  <main>
+    <section id="about" class="section fade-in">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m a diligent <strong>Frontend Developer</strong> specialized in
+          <strong>HTML, CSS, JavaScript</strong> with a passion for
+          <strong>machine learning</strong>. I build modern, high-performance,
+          user-friendly websites.
+        </p>
+        <div class="about-grid">
+          <div><strong>Full Name:</strong> Chandan Kumar Mahato</div>
+          <div><strong>Email:</strong> mahatochandan66@gmail.com</div>
+          <div>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://www.linkedin.com/in/chandan-kumar-mahato-2b5277300/"
+              target="_blank"
+              >linkedin.com/in/chandan-kumar-mahato-2b5277300</a
+            >
+          </div>
         </div>
-        <div class="about-content">
-            <article class="about-article">
-                <img src="man.png" alt="Full Name">
-                <h5>FULL NAME</h5>
-                <p>Chandan Kumar Mahato</p>
-            </article>
-            <article class="about-article">
-                <img src="email.png" alt="Email">
-                <h5>EMAIL</h5>
-                <p>mahatochandan66@gmail.com</p>
-            </article>
-            <article class="about-article">
-                <img src="linkedin.png" alt="LinkedIn">
-                <h5>LinkedIn</h5>
-                <p><a href="https://www.linkedin.com/in/chandan-kumar-mahato-2b5277300/">linkedin.com/in/chandan-kumar-mahato-2b5277300</a></p>
-            </article>
-        </div>
+      </div>
     </section>
 
-    <section id="Services">
-        <h1><span>W</span>hat I Do</h1>
-        <div class="container services-container">
-            <article class="services-article">
-                <img src="coding.png" alt="Web Development">
-                <h2>Web Development</h2>
-                <p>Crafting websites by coding, designing, and optimizing for functionality, performance, and user experience, enabling online presence and interaction.</p>
-            </article>
-            <article class="services-article">
-                <img src="python.png" alt="Python Programming">
-                <h2>Python Programming</h2>
-                <p>Python is extensively applied in data science, data analysis, machine learning, data engineering, web development other fields.</p>
-            </article>
+    <section id="services" class="section fade-in">
+      <div class="container">
+        <h2>What I Do</h2>
+        <div class="cards">
+          <div class="card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              Building responsive, accessible websites with clean, performant
+              code and engaging UI/UX.
+            </p>
+          </div>
+          <div class="card">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python Programming</h3>
+            <p>
+              Data analysis, ML prototyping, automation and backend development
+              using Python.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="skills">
-        <h1><span>M</span>y Skills</h1>
-        <div class="container skills-container">
-            <article class="skill-article">
-                <h4>HTML</h4>
-            </article>
-            <article class="skill-article">
-                <h4>CSS</h4>
-            </article>
-            <article class="skill-article">
-                <h4>JavaScript</h4>
-            </article>
-            <article class="skill-article">
-                <h4>MySQL</h4>
-            </article>
-            <article class="skill-article">
-                <h4>Python</h4>
-            </article>
-            <article class="skill-article">
-                <h4>Web Design</h4>
-            </article>
-        </div>
+    <section id="skills" class="section fade-in">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>HTML5 &amp; Semantic Markup</li>
+          <li>CSS3, Flexbox &amp; Grid</li>
+          <li>Vanilla JavaScript &amp; ES6+</li>
+          <li>Python &amp; Data Libraries</li>
+          <li>Responsive &amp; Mobile-First Design</li>
+          <li>Git, Webpack &amp; Optimization</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="Blog">
-        <h1><span>B</span>log</h1>
-        <p>Welcome to the dynamic world of front-end development, web design, and web development. In this concise guide, we'll delve into the key aspects of this exciting field.</p>
-        <div class="content">
-            <div class="card">
-    
-                <p>Web design is the art of crafting visually appealing and user-friendly websites, blending elements like typography, color theory, and layout to create memorable online experiences. HTML, CSS, and JavaScript are the cornerstone languages that enable us to build interactive and responsive websites, making them not only look great but also function seamlessly on various devices.</p>
-            </div>
-            <div class="card">
-        
-                <p>Responsive web design ensures that websites adapt effortlessly to different screen sizes, offering a consistent experience across platforms. As you progress, you can explore frameworks like Bootstrap or delve into user-centric design principles to create intuitive interfaces. The world of web design is full of creativity and innovation, waiting for you to explore.</p>
-            </div>
-        </div>
+    <section id="blog" class="section fade-in">
+      <div class="container">
+        <h2>Blog</h2>
+        <p>
+          Insights on frontend trends, responsive design, and using ML for
+          UX enhancements.
+        </p>
+        <article class="blog-card">
+          <h4>Modern CSS Techniques</h4>
+          <p>
+            Dive into CSS Grid, custom properties, and container queries to
+            level up your layouts.
+          </p>
+        </article>
+        <article class="blog-card">
+          <h4>Introduction to Intersection Observer</h4>
+          <p>
+            How to animate elements on scroll without heavy libraries.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section id="Contact">
-        <h1><span>Get</span> In Touch</h1>
-        <div class="contact-container container">
-            <form>
-                <div class="form-top">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="number" placeholder="Phone Number" required>
-                </div>
-                <div class="form-bottom">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="submit" class="btn btn-primary">Submit Now</button>
-                </div>
-            </form>
-        </div>
+    <section id="contact" class="section fade-in">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" required />
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        &copy; Chandan Kumar Mahato
-    </footer>
-    
-    <script src="script.js"></script>
+  <footer class="footer">
+    <div class="container">© 2024 Chandan Kumar Mahato</div>
+  </footer>
 </body>
-
 </html>
